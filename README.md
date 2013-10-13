@@ -1,4 +1,4 @@
-GitHub Flavored Markdown
+Tornado Template
 ================================
 
 - Tornado
