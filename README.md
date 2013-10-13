@@ -7,19 +7,19 @@ GitHub Flavored Markdown
 
 ### Starting Tornado without Nginx ### 
 
-- python main.py --port=8000, etc
+`python main.py --port=8000`
 
 ### Auto-Deploy (Runs on port 8005) ###
 
 Github -> Service Hook -> Website
 
-- Start the server by typing “python GitAutoDeploy.py --daemon-mode”
+- Start the server by typing `python GitAutoDeploy.py --daemon-mode`
 - GitHub Service Hook URL -> "http://www.domain.com:8005"
 
 ### Checking Ports ###
 
 Checking Ports
-- netstat -nlp
+`netstat -nlp`
 
 Restarting Nginx
 - /etc/init.d/nginx reload or service nginx restart
