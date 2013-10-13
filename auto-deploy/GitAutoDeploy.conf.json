@@ -2,8 +2,8 @@
 	"port": 8005, 
 	"repositories": 
 	[{
-		"url": "https://github.com/AbhiAgarwal/Dubsit", 
-		"path": "/srv/www/dubsit.com/",
+		"url": "https://github.com/AbhiAgarwal/Tornado-Template", 
+		"path": "/srv/www/domainname.com/",
 		"deploy": "echo deploy"
 	}]
 }
