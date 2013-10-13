@@ -12,7 +12,7 @@ Easy to use Tornado template. This stack uses:
 
 This is using Ubuntu 10.04+
 
-Installing the Tools:
+**Installing the Tools**:
 
 `apt-get install python-setuptools`,
 `easy_install pip`,
@@ -23,11 +23,11 @@ Installing the Tools:
 
 If git doesn't work then: `sudo apt-get -y install git-core`
 
-Setting up your Github Account:
+**Setting up your Github Account**:
 
 `cd ~/.ssh`, `ls`, `ssh-keygen -t rsa -C "email@email.com"`, `vim id_rsa.pub`, Copy the public key, paste it into your GitHub account SSH Key section, then try `ssh -T git@github.com` 
 
-Create Directory:
+**Create Directory**:
 
 `mkdir /srv/www`
 `mkdir /srv/www/domainname.com `,
@@ -38,7 +38,7 @@ Remember to add `/srv/www/domainname.com/` to the `clone` so it doesn't create a
 
 Change `nginx/nginx.conf` and `supervisord/supervisord.conf` to point to your `/srv/www/domainname.com/` to your directory path. Do this before configuring them or they will mess up.
 
-Creating configuration files:
+**Creating configuration files**:
 
 `cd /etc/nginx`,
 `rm nginx.conf`,
@@ -84,10 +84,10 @@ Github -> Service Hook -> Website
 
 ### Checking Ports ###
 
-Checking Ports
+**Checking Ports**
 - `netstat -nlp`
 
-Restarting Nginx
+**Restarting Nginx**
 - `/etc/init.d/nginx reload` or `service nginx restart`
 - `/etc/init.d/nginx start`
 
