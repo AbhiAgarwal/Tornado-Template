@@ -7,7 +7,7 @@ import tornado.websocket
 import os.path
 from tornado.options import define, options
 
-define("port", default = 8000, help = "run on the given port", type = int)
+define("port", default = 8000, help = "port to run on", type = int)
 
 class Application(tornado.web.Application):
     def __init__(self):
@@ -15,7 +15,7 @@ class Application(tornado.web.Application):
             (r"/", MainHandler),
         ]
         settings = dict(
-            cookie_secret = "Put in your secret cookie here!",
+            cookie_secret = "Put in your secret cookie here! (using the generator)",
             template_path = os.path.join(os.path.dirname(__file__), "templates"),
             static_path = os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies = True,
