@@ -1,6 +1,8 @@
 Tornado Template
 ================================
 
+Easy to use Tornado template. This stack uses:
+
 - Tornado
 - Nginx
 - Auto-Deploy
