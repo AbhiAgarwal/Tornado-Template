@@ -14,42 +14,42 @@ This is using Ubuntu 10.04+
 
 Installing the Tools:
 
-`apt-get install python-setuptools`
-`easy_install pip`
-`pip install tornado`
-`apt-get install git`
-`apt-get install nginx`
+`apt-get install python-setuptools`,
+`easy_install pip`,
+`pip install tornado`,
+`apt-get install git`,
+`apt-get install nginx`,
 `pip install supervisor`
 
 Create Directory:
 
 `mkdir /srv/www`
-`mkdir /srv/www/domainname.com `
-`cd /srv/www/domainname.com`
+`mkdir /srv/www/domainname.com `,
+`cd /srv/www/domainname.com`,
 `git clone git@github.com:AbhiAgarwal/Tornado-Template.git`
 
 Change `nginx/nginx.conf` and `supervisord/supervisord.conf` to point to your `/srv/www/domainname.com/` to your directory path. Do this before configuring them or they will mess up.
 
 Creating configuration files:
 
-`cd /etc/nginx` 
-`rm nginx.conf`
-`ln -s /srv/www/domainname.com/nginx/nginx.conf nginx.conf`
-`cd`
+`cd /etc/nginx`,
+`rm nginx.conf`,
+`ln -s /srv/www/domainname.com/nginx/nginx.conf nginx.conf`,
+`cd`,
 `ln -s /srv/www/domainname.com/supervisord/supervisord.conf supervisord.conf`
 
 Setting up Nginx:
 
-`adduser --system --no-create-home --disabled-login --disabled-password --group nginx`
-`mkdir ~/logs`
-`supervisord`
+`adduser --system --no-create-home --disabled-login --disabled-password --group nginx`,
+`mkdir ~/logs`,
+`supervisord`,
 `/etc/init.d/nginx start`
 
 It's started the Nginx server now, and started the webserver at port 8000, 8001, 8002, 8003. 
 
 Now look at Auto-Deploy and set that up. If you don't want to use that then:
 
-`cd /srv/www/domainname.com/`
+`cd /srv/www/domainname.com/`,
 `git pull`
 
 ### Starting Tornado
