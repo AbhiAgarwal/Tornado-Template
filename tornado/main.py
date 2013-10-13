@@ -15,7 +15,7 @@ class Application(tornado.web.Application):
             (r"/", MainHandler),
         ]
         settings = dict(
-            cookie_secret = "8SGUe0QKS/ecvBl5WSYLw36RuNPtqEenqkIlAD0BoSY=",
+            cookie_secret = "Put in your secret cookie here!",
             template_path = os.path.join(os.path.dirname(__file__), "templates"),
             static_path = os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies = True,
