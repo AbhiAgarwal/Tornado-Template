@@ -15,7 +15,8 @@ Github -> Service Hook -> Website
 
 - Start the server by typing:
     - `python GitAutoDeploy.py --daemon-mode`
-- GitHub Service Hook URL -> "http://www.domain.com:8005"
+- GitHub Service Hook URL
+    - `http://www.domain.com:8005`
 
 ### Checking Ports ###
 
