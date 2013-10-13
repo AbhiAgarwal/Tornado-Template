@@ -82,3 +82,8 @@ Checking Ports
 Restarting Nginx
 - `/etc/init.d/nginx reload` or `service nginx restart`
 - `/etc/init.d/nginx start`
+
+## Problems
+
+- Problems with Supervisord
+`cd`, `unlink supervisord.sock`
