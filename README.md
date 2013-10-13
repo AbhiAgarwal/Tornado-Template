@@ -5,7 +5,7 @@ GitHub Flavored Markdown
 - Nginx
 - Auto-Deploy
 
-### Starting Tornado without Nginx ### 
+### Starting Tornado without Nginx
 
 `python main.py --port=8000`
 
