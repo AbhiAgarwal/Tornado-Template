@@ -59,7 +59,7 @@ Using this Tornado template using Nginx:
 
 `/etc/init.d/nginx start`
 
-### [Auto-Deploy (Runs on port 8005)](https://github.com/logsol/Github-Auto-Deploy) ###
+### Auto-Deploy (Runs on port 8005) - [Link](https://github.com/logsol/Github-Auto-Deploy) ###
 
 Github -> Service Hook -> Website
 
