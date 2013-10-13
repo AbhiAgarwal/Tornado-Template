@@ -6,6 +6,7 @@ Easy to use Tornado template. This stack uses:
 - Tornado
 - Nginx
 - Auto-Deploy
+- Twitter Bootstrap
 
 ### Installing Git, Python Tools, Nginx, Tornado, and Supervisor
 
