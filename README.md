@@ -13,14 +13,15 @@ Easy to use Tornado template. This stack uses:
 This is using Ubuntu 10.04+
 
 **Installing the Tools**:
-'''
+
+```
 apt-get install python-setuptools
 easy_install pip
 pip install tornado
 apt-get install git
 apt-get install nginx
 pip install supervisor
-'''
+```
 
 If git doesn't work then: `sudo apt-get -y install git-core`
 
@@ -30,12 +31,12 @@ If git doesn't work then: `sudo apt-get -y install git-core`
 
 **Create Directory**:
 
-'''
+```
 mkdir /srv/www
 mkdir /srv/www/domainname.com 
 cd /srv/www/domainname.com
 git clone git@github.com:AbhiAgarwal/Tornado-Template.git /srv/www/domainname.com/
-'''
+```
 
 Remember to add `/srv/www/domainname.com/` to the `clone` so it doesn't create a new directory.
 
