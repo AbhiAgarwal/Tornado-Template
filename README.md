@@ -128,3 +128,7 @@ print base64.b64encode(uuid.uuid4().bytes + uuid.uuid4().bytes)
 
 - Problems with Supervisord?
     - try: `cd`, `unlink supervisord.sock`
+
+## Todo
+
+[] Create a .sh script to install all of it together
