@@ -87,10 +87,11 @@ Github -> Service Hook -> Website
 ### Generating the Secret Key ###
 
 If you want to generate a secret key for the cookie_secret on your main file then:
-
-`import base64`
-`import uuid`
-`print base64.b64encode(uuid.uuid4().bytes + uuid.uuid4().bytes)`
+```
+import base64
+import uuid
+print base64.b64encode(uuid.uuid4().bytes + uuid.uuid4().bytes)
+```
 
 ### Checking Ports ###
 
