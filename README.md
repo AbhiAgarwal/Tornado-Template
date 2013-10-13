@@ -32,7 +32,9 @@ Create Directory:
 `mkdir /srv/www`
 `mkdir /srv/www/domainname.com `,
 `cd /srv/www/domainname.com`,
-`git clone git@github.com:AbhiAgarwal/Tornado-Template.git`
+`git clone git@github.com:AbhiAgarwal/Tornado-Template.git /srv/www/domainname.com/`
+
+Remember to add `/srv/www/domainname.com/` to the `clone` so it doesn't create a new directory.
 
 Change `nginx/nginx.conf` and `supervisord/supervisord.conf` to point to your `/srv/www/domainname.com/` to your directory path. Do this before configuring them or they will mess up.
 
