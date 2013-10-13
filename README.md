@@ -27,6 +27,27 @@ Create Directory:
 `cd /srv/www/domainname.com`
 `git clone git@github.com:AbhiAgarwal/Tornado-Template.git`
 
+Creating configuration files:
+
+`cd /etc/nginx` 
+`rm nginx.conf`
+`ln -s /srv/www/domainname.com/nginx/nginx.conf nginx.conf`
+`cd`
+`ln -s /srv/www/domainname.com/supervisord/supervisord.conf supervisord.conf`
+
+Setting up Nginx:
+
+`adduser --system --no-create-home --disabled-login --disabled-password --group nginx`
+`mkdir ~/logs`
+`supervisord`
+`/etc/init.d/nginx start`
+
+It's started the Nginx server now, and started the webserver at port 8000, 8001, 8002, 8003. 
+
+Now look at Auto-Deploy and set that up. If you don't want to use that then:
+
+`cd /srv/www/domainname.com/`
+`git pull`
 
 ### Starting Tornado
 
@@ -35,6 +56,8 @@ Using this Tornado template without Implementing Nginx:
 `python main.py --port=80`
 
 Using this Tornado template using Nginx:
+
+`/etc/init.d/nginx start`
 
 ### Auto-Deploy (Runs on port 8005) ###
 
