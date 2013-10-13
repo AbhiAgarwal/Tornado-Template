@@ -1,0 +1,9 @@
+{
+	"port": 8005, 
+	"repositories": 
+	[{
+		"url": "https://github.com/AbhiAgarwal/Dubsit", 
+		"path": "/srv/www/dubsit.com/",
+		"deploy": "echo deploy"
+	}]
+}
