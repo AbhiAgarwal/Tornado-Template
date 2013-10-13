@@ -8,6 +8,8 @@ Easy to use Tornado template. This stack uses:
 - Auto-Deploy
 - Twitter Bootstrap
 
+Installing this should take roughly **5 minutes**!
+
 ### Installing Git, Python Tools, Nginx, Tornado, and Supervisor
 
 This is using Ubuntu 10.04+
