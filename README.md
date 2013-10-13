@@ -28,6 +28,8 @@ Create Directory:
 `cd /srv/www/domainname.com`
 `git clone git@github.com:AbhiAgarwal/Tornado-Template.git`
 
+Change `nginx/nginx.conf` and `supervisord/supervisord.conf` to point to your `/srv/www/domainname.com/` to your directory path. Do this before configuring them or they will mess up.
+
 Creating configuration files:
 
 `cd /etc/nginx` 
