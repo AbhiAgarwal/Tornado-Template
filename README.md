@@ -27,7 +27,17 @@ If git doesn't work then: `sudo apt-get -y install git-core`
 
 **Setting up your Github Account**:
 
-`cd ~/.ssh`, `ls`, `ssh-keygen -t rsa -C "email@email.com"`, `vim id_rsa.pub`, Copy the public key, paste it into your GitHub account SSH Key section, then try `ssh -T git@github.com` 
+```
+cd ~/.ssh
+ls
+ssh-keygen -t rsa -C "email@email.com"
+vim id_rsa.pub
+```
+
+Copy the public key, paste it into your GitHub account SSH Key section, then try:
+```
+ssh -T git@github.com
+```
 
 **Create Directory**:
 
@@ -44,18 +54,22 @@ Change `nginx/nginx.conf` and `supervisord/supervisord.conf` to point to your `/
 
 **Creating configuration files**:
 
-`cd /etc/nginx`,
-`rm nginx.conf`,
-`ln -s /srv/www/domainname.com/nginx/nginx.conf nginx.conf`,
-`cd`,
-`ln -s /srv/www/domainname.com/supervisord/supervisord.conf supervisord.conf`
+```
+cd /etc/nginx
+rm nginx.conf
+ln -s /srv/www/domainname.com/nginx/nginx.conf nginx.conf
+cd
+ln -s /srv/www/domainname.com/supervisord/supervisord.conf supervisord.conf
+```
 
 **Setting up Nginx:**
 
-`adduser --system --no-create-home --disabled-login --disabled-password --group nginx`,
-`mkdir ~/logs`,
-`supervisord`,
-`/etc/init.d/nginx start`
+```
+adduser --system --no-create-home --disabled-login --disabled-password --group nginx
+mkdir ~/logs
+supervisord
+/etc/init.d/nginx start
+```
 
 It's started the Nginx server now, and started the webserver at port 8000, 8001, 8002, 8003. 
 
@@ -63,8 +77,10 @@ Try and open your URL/IP and it should work!
 
 **Now look at Auto-Deploy and set that up. If you don't want to use that then:**
 
-`cd /srv/www/domainname.com/`,
-`git pull`
+```
+cd /srv/www/domainname.com/
+git pull
+```
 
 ### Starting Tornado
 
