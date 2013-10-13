@@ -85,5 +85,5 @@ Restarting Nginx
 
 ## Problems
 
-- Problems with Supervisord
-`cd`, `unlink supervisord.sock`
+- Problems with Supervisord?
+    - try: `cd`, `unlink supervisord.sock`
