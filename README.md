@@ -7,7 +7,7 @@ Easy to use Tornado template. This stack uses:
 - Nginx
 - Auto-Deploy
 
-### Installing Git, Python Tools, Nginx, etc
+### Installing Git, Python Tools, Nginx, Tornado, and Supervisor
 
 This is using Ubuntu 10.04+
 
