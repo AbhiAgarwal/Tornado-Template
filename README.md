@@ -64,6 +64,7 @@ Using this Tornado template using Nginx:
 Github -> Service Hook -> Website
 
 - Update the file (GitAutoDeploy.conf.json)
+    - Change `url` and `path`
 
 - Start the server by typing:
     - `python GitAutoDeploy.py --daemon-mode`
