@@ -46,7 +46,7 @@ Change `nginx/nginx.conf` and `supervisord/supervisord.conf` to point to your `/
 `cd`,
 `ln -s /srv/www/domainname.com/supervisord/supervisord.conf supervisord.conf`
 
-Setting up Nginx:
+**Setting up Nginx:**
 
 `adduser --system --no-create-home --disabled-login --disabled-password --group nginx`,
 `mkdir ~/logs`,
@@ -55,7 +55,9 @@ Setting up Nginx:
 
 It's started the Nginx server now, and started the webserver at port 8000, 8001, 8002, 8003. 
 
-Now look at Auto-Deploy and set that up. If you don't want to use that then:
+Try and open your URL/IP and it should work!
+
+**Now look at Auto-Deploy and set that up. If you don't want to use that then:**
 
 `cd /srv/www/domainname.com/`,
 `git pull`
@@ -81,6 +83,14 @@ Github -> Service Hook -> Website
     - `python GitAutoDeploy.py --daemon-mode`
 - GitHub Service Hook URL
     - `http://www.domain.com:8005`
+
+### Generating the Secret Key ###
+
+If you want to generate a secret key for the cookie_secret on your main file then:
+
+`import base64
+import uuid
+print base64.b64encode(uuid.uuid4().bytes + uuid.uuid4().bytes)`
 
 ### Checking Ports ###
 
