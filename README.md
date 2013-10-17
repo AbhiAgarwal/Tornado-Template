@@ -5,8 +5,9 @@ Easy to use Tornado template. This stack uses:
 
 - Tornado
 - Nginx
-- Auto-Deploy
+- Auto-Deploy (Git Hook)
 - Twitter Bootstrap
+- Supervisor
 
 Installing this should take roughly **5 minutes**!
 
